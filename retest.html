@@ -8,8 +8,12 @@
     <title>Globe Rêveurs</title>
     <link rel="stylesheet" href="./CSS/styles2.css">
 </head>
+
 <body>
-    <header>
+    
+    <div id="entete">
+
+     <!-- Menu gauche -->
     <nav class="navbar">
     <ul class="menu">
         <li class="dropdown">
@@ -19,29 +23,32 @@
                 <li><a href="#">Notre Mission</a></li>
             </ul>
         </li>
+ 
  <li class="dropdown">
             <a href="#">Nos voyages</a>
             <ul class="dropdown-menu">
                 <li class="has-submenu">
                     <a href="#">Europe</a>
                     <ul class="submenu">
-                        <li><a href="#">Cracovie</a></li>
+                        <li><a href="pologne.html">Cracovie</a></li>
                     </ul>
                 </li>
+               
                 <li class="has-submenu">
                     <a href="#">Océanie</a>
                     <ul class="submenu">
-                        <li><a href="#">Nouvelle-Calédonie</a></li>
+                        <li><a href="nouvellecaledonie.html">Nouvelle-Calédonie</a></li>
                     </ul>
                 </li>
+                 
                  <li class="has-submenu">
                     <a href="#">Scandinavie</a>
                     <ul class="submenu">
-                        <li><a href="#">Suède</a></li>
-                    </ul>
+                        <li><a href="Pagesuede.html">Suède</a></li></a>
+
+            </ul>
                 </li>
-
-
+</ul>
 
         <li class="dropdown">
             <a href="#">Nos conseils</a>
@@ -64,32 +71,38 @@
             </ul>
         </li>
 
-        <li class="dropdown">
-            <a href="#">Notre e-book</a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Présentation du projet</a></li>
-                <li><a href="#">L'obtenir</a></li>
-            </ul>
-        </li>
-    </ul>
+        </ul>
 </nav>
 
-                        
-                <h1 class="logo">GLOBE<br>RÊVEURS</h1>
-            <div class="right-section">
-                <ul class="menu">
-                    <li><a href="#">Notre e-book</a></li>
-                    <li><a href="#">Contactez-nous</a></li>
-                    <form class="search-bar" action="recherche.html" method="get">
-                        <input type="text" name="q" placeholder="Rechercher..." aria-label="Recherche">
-                        <button type="submit"></button>
-                    </form>
-                    <img src="./image/logo.png" alt="Globe logo" class="globe-logo">
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
+
+      <!-- Logo central -->               
+        <h1 class="logo">GLOBE<br>RÊVEURS</h1>
+
+ <!-- Section droite -->
+        <div class="right-section">
+            
+            <ul class="menu">
+                <li class="dropdown">
+                    <a href="#">Notre e-book</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Présentation du projet</a></li>
+                        <li><a href="#">L'obtenir</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contactez-nous</a></li>
+            </ul>
+
+            <form class="search-bar" action="recherche.html" method="get">
+                <input type="text" name="q" placeholder="Rechercher..." aria-label="Recherche">
+                <button type="submit"></button>
+            </form>
+
+            <img src="./image/logo.png" alt="Globe logo" class="globe-logo">
+        </div>
+   </div id="entete">
+  
+
+    <div id="main">
         <section class="content">
             <div class="text-section">
                 <h2>Bienvenue dans nos aventures !</h2>
@@ -97,14 +110,30 @@
                 <p>De la jungle urbaine aux plages secrètes, des road trips improvisés aux escapades culinaires, on explore le monde à notre façon.</p>
                 <p>Au fil de nos articles, on vous embarque avec nous pour partager nos expériences, nos bons plans et nos anecdotes inoubliables.</p>
             </div>
+
+  
+      <div class="container">
+  <div class="text">
+    <h2>Les avis de nos voyageurs</h2>
+  </div>
+  <div class="content">
+    <div class="slider">
+      <div class="slider-content">
+        <img src="./image/Avis1.png" alt="Avis 1">
+        <img src="./image/Avis2.png" alt="Avis 2">
+        <img src="./image/Avis3.png" alt="Avis 3">
+      </div>
+    </div>
+
             <div class="video-section">
                 <video src="./video/tiktok.mp4" autoplay muted loop controls>
                     Votre navigateur ne supporte pas la lecture de vidéos.
                 </video>
             </div>
         </section>
-    </main>
-    <footer>
+    </div id="main">
+
+    <div id="footer">
         <div class="footer-icons">
             <img src="./image/logo.png" alt="Image logo" class="icon">
             <div class="social-icons">
@@ -113,6 +142,6 @@
                 <a href="http://pinterest.com"><img src="./image/pinterest.png" alt="Pinterest"></a>
             </div>
         </div>
-    </footer>
+    </div id="footer">
 </body>
 </html>
